@@ -34,7 +34,7 @@ def speech2text(filename):
         return 'error: Error in speech recognition service'
 
 def query(payload):
-    response = requests.post("https://api-inference.huggingface.co/models/Qiliang/bart-large-cnn-samsum-ChatGPT_v3", headers={"Authorization": "Bearer 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"}, json=payload)
+    response = requests.post("https://api-inference.huggingface.co/models/Qiliang/bart-large-cnn-samsum-ChatGPT_v3", headers={"Authorization": "Bearer {Add your token}"}, json=payload)
     return response.json()
 
 def In2out_text(in_text):
